@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #0a0a0f;
+}
+
+@theme inline {
+  --color-background: #0a0a0f;
+  --color-foreground: #f0eee8;
+  --color-card: #12111a;
+  --color-card-foreground: #f0eee8;
+  --color-primary: #7c6af7;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1c1b27;
+  --color-secondary-foreground: #a09db8;
+  --color-muted: #161520;
+  --color-muted-foreground: #6b6882;
+  --color-accent: #e8c84a;
+  --color-accent-foreground: #0a0a0f;
+  --color-border: rgba(255,255,255,0.07);
+  --color-ring: #7c6af7;
+  --radius: 8px;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+*:hover {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(124,106,247,0.3) transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
